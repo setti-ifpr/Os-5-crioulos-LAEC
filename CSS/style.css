@@ -9,21 +9,26 @@ header{
     display: flex;
     width: 100vw;
     height: auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
 body{
     background-color: white;
     display: flex;
+    flex-direction: column;
 }
 
 .trilho{
-    margin-top: 20px;
+    top: -25px;
+    margin-left: 50px;
     width: 100px;
     height: 50px;
     border-radius: 50px;
     background-color: gray;
     position: relative;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .trilho .indicador{
@@ -44,4 +49,52 @@ body{
 
 .dark{
     background-color: hsla(0, 0%, 0%, 0.884);
+}
+
+.github{
+    margin-right: 50px;
+}
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
