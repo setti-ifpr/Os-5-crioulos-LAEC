@@ -9,56 +9,73 @@
 </head>
 
 <body>
-    <header>
-        <div class="trilho" id="trilho">
-            <div class="indicador">          
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <button class="dark-btn" onclick="toggleDarkMode()">🌑 Dark Mode</button>
+                <span id="logo"></span>
+            </div>
+            <div class="header-right">
+                <a class="github" target="_blank" href="https://github.com/OSCincoCrioulos">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                        <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.22 2.2.82a7.62 7.62 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Github
+                </a>
+            </div>
+        </header>
+        <div class="carousel-section">
+            <div class="carousel" id="carousel">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=500&q=80" alt="Banda 1" class="active">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?fit=crop&w=500&q=80" alt="Banda 2">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?fit=crop&w=500&q=80" alt="Banda 3">
+                <img src="https://images.unsplash.com/photo-1458218454288-4b6d6d7801a2?fit=crop&w=500&q=80" alt="Banda 4">
+                <button class="carousel-btn left" onclick="prevImg()">‹</button>
+                <button class="carousel-btn right" onclick="nextImg()">›</button>
             </div>
         </div>
-        
-        <div>
-            <img src="IMG/OS-5-CRIOULOS.png" alt="" width="300px" height="100px">
-        </div>
-        
-        <div class="github">
-            <a href="https://github.com/setti-ifpr/Os-5-crioulos-LAEC" target="_blank" class="github"><img src="IMG/github-logo.png" alt="" width="50px" height="50px"></a>
-        </div>   
-    </header>
-    <main>
-        <section class="slider">
-            <div class="slider-content">
-                <input type="radio" name="btn-radio" id="radio1">
-                <input type="radio" name="btn-radio" id="radio2">
-                <input type="radio" name="btn-radio" id="radio3">
-
-                <div class="slide-box primeiro">
-                    <img src="IMG/5-crioulinho.png" alt="">
-                </div>
-
-                <div class="slide-box">
-                    <img src="IMG/bar.png" alt="">
-                </div>
-
-                <div class="slide-box">
-                    <img src="IMG/samba-1967.png" alt="">
-                </div>
-
-                <div class="nav-btn">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-
-                <div>
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
+        <div class="video-section">
+            <div class="video-block">
+                <a href="https://www.youtube.com/watch?v=ZcGTFz3T7Oc" target="_blank">
+                    🎵 "Caminho do Samba"
+                </a>
             </div>
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
+            <div class="video-block">
+                <a href="https://www.youtube.com/watch?v=z2eZ8sQFDks" target="_blank">
+                    🎵 "Raízes do Brasil"
+                </a>
+            </div>
+            <div class="video-block">
+                <a href="https://www.youtube.com/watch?v=N9jiKx2Z7nM" target="_blank">
+                    🎵 "Liberdade Canta"
+                </a>
+            </div>
+        </div>
+        <div class="info-section">
+            <div class="info-block">
+                <h3>Sobre</h3>
+                <p>
+                    "Os Cinco Crioulos" é uma banda nacional conhecida por valorizar a cultura brasileira e afro-brasileira através da música.
+                </p>
+                <a class="more-btn" href="sobre.html">Mais Info</a>
+            </div>
+            <div class="info-block">
+                <h3>Álbuns & Músicas</h3>
+                <p>
+                    Possuem diversos álbuns renomados, incluindo o clássico "Cores do Brasil" e músicas que marcaram gerações.
+                </p>
+                <a class="more-btn" href="albuns.html">Mais Info</a>
+            </div>
+            <div class="info-block">
+                <h3>Curiosidades</h3>
+                <p>
+                    Participaram de festivais internacionais e colaboraram com grandes nomes da música brasileira.
+                </p>
+                <a class="more-btn" href="curiosidades.html">Mais Info</a>
+            </div>
+        </div>
+    </div>
+
     <script src="JS/main.js"></script>
 </body>
 
