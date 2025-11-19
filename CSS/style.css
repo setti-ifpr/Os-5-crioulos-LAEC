@@ -103,10 +103,15 @@ button {
     padding: 20px;
 }
 
+.videos > h2{
+    text-align: center;
+}
+
 .videos .video-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .videos iframe {
