@@ -66,6 +66,9 @@ button {
     max-width: 100%;
     margin: 20px auto;
     overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-slide {
@@ -73,8 +76,8 @@ button {
 }
 
 .carousel-slide img {
-    width: 100vw;
-    height: 700px;
+    width: 900px;
+    height: 900px;
     vertical-align: middle;
 }
 
