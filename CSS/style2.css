@@ -138,6 +138,12 @@ header p {
     text-decoration: underline;
 }
 
+@media (max-width: 800px) {
+    .info-grid {
+        flex-direction: column;
+    }
+}
+
 footer {
     background-color: #333;
     color: #fff;
